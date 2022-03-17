@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11"
+    tools:context=".viewflipper">
+
+    <ViewFlipper
+        android:id="@+id/ViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_weight="11">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anh1"
+            android:background="@color/white"
+            android:scaleType="centerCrop"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anh2"
+            android:background="@color/white"
+            android:scaleType="centerCrop"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anh3"
+            android:background="@color/white"
+            android:scaleType="centerCrop"></ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anh4"
+            android:background="@color/white"
+            android:scaleType="centerCrop"></ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anh5"
+            android:background="@color/white"
+            android:scaleType="centerCrop"></ImageView>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnpre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="back"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="#F3F1E9"
+            android:textColor="#3A3939"/>
+
+        <Button
+            android:id="@+id/btnjoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buy now"
+            android:textSize="20dp"
+            android:backgroundTint="#3A3939"
+            android:background="#E4E3D7"
+            android:textColor="#F3F1E9"/>
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="#F3F1E9"
+            android:textColor="#3A3939" />
+    </LinearLayout>
+
+</LinearLayout>
