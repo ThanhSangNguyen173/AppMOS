@@ -6,8 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="11"
+    android:weightSum="12"
     tools:context=".viewflipper">
+
+    <Button
+        android:id="@+id/btnfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="FEEDBACK PRODUCT"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#F3F1E9"
+        android:textColor="#3A3939"/>
 
     <ViewFlipper
         android:id="@+id/ViewFlipper"

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class viewflipper extends AppCompatActivity {
     ViewFlipper viewFlipper;
-    Button bt1,bt2,bt3;
+    Button bt1,bt2,bt3,btnfeedback;
     Animation in,out;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class viewflipper extends AppCompatActivity {
         bt1 = findViewById(R.id.btnpre);
         bt2 = findViewById(R.id.btnjoin);
         bt3 = findViewById(R.id.btnnext);
+        btnfeedback = findViewById(R.id.btnfeedback);
 
         viewFlipper.setInAnimation(in);
         viewFlipper.setOutAnimation(out);
@@ -59,6 +60,13 @@ public class viewflipper extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent3 = new Intent(viewflipper.this, listitem.class);
                 startActivity(intent3);
+            }
+        });
+        btnfeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentfb = new Intent(viewflipper.this, MainActivity.class );
+                startActivity(intentfb);
             }
         });
     }
